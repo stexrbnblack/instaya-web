@@ -85,7 +85,7 @@ export function SignUpForm() {
 					onError={toggleFieldError}
 					inputProps={{
 						name: 'name',
-						placeholder: 'Gonzálo',
+						placeholder: 'User Name',
 						required: true,
 					}}
 				/>
@@ -98,7 +98,7 @@ export function SignUpForm() {
 					onError={toggleFieldError}
 					inputProps={{
 						name: 'lastName',
-						placeholder: 'Peréz',
+						placeholder: 'Last Name',
 						required: true,
 					}}
 				/>
@@ -114,7 +114,7 @@ export function SignUpForm() {
 					inputProps={{
 						type: 'email',
 						name: 'email',
-						placeholder: 'usuario@dominio.com',
+						placeholder: 'User@dominio.com',
 						required: true,
 					}}
 				/>
@@ -126,7 +126,7 @@ export function SignUpForm() {
 					onError={toggleFieldError}
 					inputProps={{
 						name: 'identificationNumber',
-						placeholder: '12345678901',
+						placeholder: '1234567890',
 						required: true,
 					}}
 				/>
@@ -169,7 +169,7 @@ export function SignUpForm() {
 					hasError={!success}
 					isLoading={isSubmitting}
 				>
-					Terminar registro
+					Register
 				</Button>
 
 				<span className="mt-2 h-8 text-red-500">{!success && issue}</span>
